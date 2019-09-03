@@ -5,7 +5,7 @@ from helper import D
 API_key = D['weather_API_key']
 base_url = "https://api.openweathermap.org/data/2.5/forecast?"
 
-city_zip = "06511"
+city_zip = D['weather_zip']
  
 final_url = base_url + "appid=" + API_key + "&zip=" + city_zip + ",us"
 
