@@ -39,6 +39,6 @@ def weather_reporter(D):
         row = [dtime,humidity,temp,desc]
         container_list.append(row)
     
-    return(container_list)
+    return(container_list) # add zip in here somewhere
 
 #pprint(weather_reporter(D))
