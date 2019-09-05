@@ -1,3 +1,10 @@
 from phue import Bridge
+import random
+from helper import D
 
-b = Bridge('ip_of_your_bridge') # damn, need to get a bridge first
+b = Bridge(D['light_ip'])
+#b.connect()
+    
+b.set_light(1, 'xy', [random.random(),random.random()])
+
+
